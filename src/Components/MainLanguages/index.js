@@ -35,7 +35,28 @@ const items = [
             "Node"
         ],
     },
-    
+    {
+        key: String(Math.random()),
+        id: 2,
+        name: "Python",
+        img: Python,
+        creator: "Guido van Rossum",
+        country: "Holanda",
+        features:[
+            "Facilidade",
+            "Democracia",
+            "Simplicidade",
+            "Robustez",
+            "Eficácia",
+        ],
+        mainFrameworks:[
+            "Django",
+            "Flask",
+            "Web2py",
+            "CherryPy",
+            "Bottle"
+        ],
+    },
 
 
 ]
