@@ -1,15 +1,16 @@
 import styled from 'styled-components/native';
 
 export const Wrapper = styled.View`
-    background-color:#ff1493;
+    margin-top:10px;
+    align-items:center;
+    padding:0 10px;
 `;
 
 export const Container = styled.ScrollView.attrs(() => ({
     horizontal:true,
     showsHorizontalScrollIndicator: false,
 }))`
-    background-color:#2690e7;
-`
+`;
 
 export const Option = styled.TouchableOpacity`
     background-color:#281336;
@@ -17,7 +18,7 @@ export const Option = styled.TouchableOpacity`
     padding:40px 0;
     margin-right:10px;
     margin-left:10px;
-    border-radius:30px;
+    border-radius:15px;
     align-items:center;
 `;
 
