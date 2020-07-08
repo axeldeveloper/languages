@@ -1,5 +1,7 @@
 import React from 'react';
 
+import {StatusBar} from 'react-native';
+
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import Developer from '../../Images/HomeScreen/developer.png';
@@ -14,24 +16,30 @@ import {Wrapper,
 
 export default function Home({navigation}){
     return(
-        <Wrapper>
+        <>
 
-            <Container>
+            <StatusBar backgroundColor="#281336" barStyle="light-content" />
 
-                <Title>Linguagens de Programação</Title>
+            <Wrapper>
 
-                <Img source={Developer} alt="Desenvolvedor" />
+                <Container>
 
-                <ButtonInit onPress={() => navigation.navigate('Main')}>
+                    <Title>Linguagens de Programação</Title>
 
-                    <TitleButton>Iniciar</TitleButton>
+                    <Img source={Developer} alt="Desenvolvedor" />
 
-                    <MaterialCommunityIcons name="location-enter" size={24} color="black" />
+                    <ButtonInit onPress={() => navigation.navigate('Main')}>
 
-                </ButtonInit>
+                        <TitleButton>Iniciar</TitleButton>
 
-            </Container>
+                        <MaterialCommunityIcons name="location-enter" size={24} color="black" />
 
-        </Wrapper>
+                    </ButtonInit>
+
+                </Container>
+
+            </Wrapper>
+
+        </>
     )
 } 
