@@ -11,8 +11,8 @@ export const Option = styled.TouchableOpacity`
     border-radius:10px;
     width:90%;
     padding:5px 10px;
-    margin-top:15px;
-    margin-bottom:15px;
+    margin-top:5px;
+    margin-bottom:25px;
     flex-direction:row;
     align-items:center;
     justify-content:space-between;
