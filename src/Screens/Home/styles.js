@@ -17,3 +17,4 @@ export const Title = styled.Text`
     font-size:18px;
 `;
 
+
