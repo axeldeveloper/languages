@@ -1,4 +1,6 @@
-import React from 'react';
+import React,{useState} from 'react';
+
+import {Modal} from 'react-native';
 
 import Javascript from '../../Images/Languages/Javascript.png';
 import PHP from '../../Images/Languages/PHP.png';
@@ -187,18 +189,39 @@ const items = [
 
 ]
 
-export default function MainLanguages(){
+
+
+export default function MainLanguages(){    
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null)
+    function handleShowMoreInfo(item){
+        setIsModalOpen(true);
+        setSelectedOption(item.id);
+    }
+
     return(
         <Wrapper>
 
             <Container>
 
                 {items.map(item => (
-                    <Option key={item.key}>
+                    <Option key={item.key} onPress={() => handleShowMoreInfo(item)}>
                         
                         <Img source={item.img} alt={item.name} />
 
                         <Title>{item.name}</Title>
+
+                        {item.id === selectedOption ? 
+
+                            <Modal
+                            animationType="slide"
+                            visible={isModalOpen}>
+
+                                
+
+                            </Modal>
+                        
+                        : null}
 
                     </Option>
                 ))}
