@@ -9,6 +9,11 @@ export const Wrapper = styled.SafeAreaView`
 
 export const Container = styled.View`
     background-color:#ff1493;
-    padding:20px;
+`;
+
+export const Title = styled.Text`
+    color:#fff;
+    font-weight:bold;
+    font-size:18px;
 `;
 
