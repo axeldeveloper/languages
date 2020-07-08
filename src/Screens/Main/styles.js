@@ -4,3 +4,5 @@ export const Wrapper = styled.SafeAreaView`
     flex:1;
     background-color:#fff;
 `;
+
+export const Container = styled.ScrollView``;

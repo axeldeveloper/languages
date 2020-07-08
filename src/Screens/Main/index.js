@@ -2,7 +2,7 @@ import React from 'react';
 
 import {StatusBar} from 'react-native';
 
-import {Wrapper} from './styles';
+import {Wrapper, Container} from './styles';
 
 import Header from '../../Components/Header';
 import MainLanguages from '../../Components/MainLanguages';
@@ -15,11 +15,15 @@ export default function Main(){
 
             <Wrapper>
 
-                <Header />
-                
-                <MainLanguages />
+                <Container>
 
-                <DevelopmentAreas />
+                    <Header />
+                    
+                    <MainLanguages />
+
+                    <DevelopmentAreas />
+
+                </Container>
 
             </Wrapper>
             
