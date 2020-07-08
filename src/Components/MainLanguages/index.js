@@ -286,7 +286,7 @@ export default function MainLanguages(){
 
                                         <GoBackButton onPress={() => handleCloseModal()}>
 
-                                            <Entypo name="back" size={24} color="black" />
+                                            <Entypo name="back" size={24} color="#281336" />
 
                                             <TileGoBackButton>Voltar</TileGoBackButton>
 

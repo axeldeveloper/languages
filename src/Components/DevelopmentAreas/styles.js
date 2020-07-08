@@ -66,3 +66,37 @@ export const TitleModal = styled.Text`
     font-size:25px;
 `;
 
+export const WrapperDescriptions = styled.View`
+    padding:0 15px;
+    margin-top:25px;
+`;
+
+export const Descriptions = styled.Text`
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    margin-top:25px;
+`;
+
+export const WrapperSecondButtonCloseModal = styled.View`
+    align-items:center;
+    justify-content:center;
+    margin-top:120px;
+`;
+
+export const SecondButtonCloseModal = styled.TouchableOpacity`
+    background-color:#c5e3f6;
+    width:85%;
+    padding:15px 0;
+    border-radius:10px;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+`;
+
+export const TitleSecondButtonCloseModal = styled.Text`
+    font-weight:bold;
+    font-size:18px;
+    margin-left:10px;
+    color:#281336;
+`;

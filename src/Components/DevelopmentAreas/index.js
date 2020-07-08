@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import {Modal} from 'react-native';
 
-import {AntDesign} from '@expo/vector-icons';
+import {AntDesign, Entypo} from '@expo/vector-icons';
 
 import frontEnd from '../../Images/DevelopmentAreas/frontEnd.png';
 import backEnd from '../../Images/DevelopmentAreas/backEnd.png';
@@ -20,6 +20,11 @@ import {Container,
         WrapperBottomModal,
         WrapperTitleModal,
         TitleModal,
+        WrapperDescriptions,
+        Descriptions,
+        WrapperSecondButtonCloseModal,
+        SecondButtonCloseModal,
+        TitleSecondButtonCloseModal,
 } from './styles';
 
 const items = [
@@ -114,6 +119,26 @@ export default function DevelopmentAreas(){
                                     <TitleModal>{item.title}</TitleModal>
 
                                 </WrapperTitleModal>
+
+                                <WrapperDescriptions>
+
+                                    <Descriptions>{item.description1}</Descriptions>
+
+                                    <Descriptions>{item.description2}</Descriptions>
+
+                                </WrapperDescriptions>
+
+                                <WrapperSecondButtonCloseModal>
+
+                                    <SecondButtonCloseModal onPress={() => handleCloseModal()}>
+                                        
+                                        <Entypo name="back" size={24} color="#281336" />
+
+                                        <TitleSecondButtonCloseModal>Voltar</TitleSecondButtonCloseModal>
+
+                                    </SecondButtonCloseModal>
+
+                                </WrapperSecondButtonCloseModal>
 
                             </WrapperBottomModal>
 

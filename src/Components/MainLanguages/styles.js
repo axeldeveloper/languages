@@ -77,13 +77,13 @@ export const WrapperTopic = styled.View`
 export const TitleTopic = styled.Text`
     color:#fff;
     font-weight:bold;
-    font-size:20px;
+    font-size:16px;
 `;
 
 export const WrapperGoBackButton = styled.View`
     align-items:center;
     justify-content:center;
-    margin-top:90px;
+    margin-top:100px;
 `;
 
 export const GoBackButton = styled.TouchableOpacity`
