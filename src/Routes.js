@@ -12,7 +12,7 @@ export default function Routes(){
     return(
         <NavigationContainer>
 
-            <Stack.Navigator headerMode="" initialRouteName="Main">
+            <Stack.Navigator headerMode="" initialRouteName="Home">
 
                 <Stack.Screen name="Home" component={Home} />
                 <Stack.Screen name="Main" component={Main} />
