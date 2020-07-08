@@ -27,4 +27,42 @@ export const TitleOption = styled.Text`
 export const ImageOption = styled.Image`
     width:150px;
     height:100px;
-`; 
+`;
+
+export const ButtonCloseModal = styled.TouchableOpacity`
+    width:45px;
+    padding:10px;
+    align-items:center;
+    justify-content:center;
+`;
+
+export const WrapperImageModal = styled.View`
+    align-items:center;
+    justify-content:center;
+`;
+
+export const ImageModal = styled.Image`
+    width:250px;
+    height:150px;
+`;
+
+export const WrapperBottomModal = styled.View`
+    flex:1;
+    background-color:#281336;
+    margin-top:20px;
+    border-top-right-radius:65px;
+    border-top-left-radius:65px;
+`;
+
+export const WrapperTitleModal = styled.View`
+    margin-top:50px;
+    align-items:center;
+    justify-content:center;
+`;
+
+export const TitleModal = styled.Text`
+    color:#fff;
+    font-weight:bold;
+    font-size:25px;
+`;
+

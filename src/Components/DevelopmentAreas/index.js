@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 
 import {Modal} from 'react-native';
 
+import {AntDesign} from '@expo/vector-icons';
 
 import frontEnd from '../../Images/DevelopmentAreas/frontEnd.png';
 import backEnd from '../../Images/DevelopmentAreas/backEnd.png';
@@ -13,7 +14,12 @@ import {Container,
         Option,
         TitleOption,
         ImageOption,
-        
+        ButtonCloseModal,
+        WrapperImageModal,
+        ImageModal,
+        WrapperBottomModal,
+        WrapperTitleModal,
+        TitleModal,
 } from './styles';
 
 const items = [
@@ -66,7 +72,11 @@ export default function DevelopmentAreas(){
 
     function handleShowMoreInfo(items){
         setModalIsOpen(true);
-        setSelectedOption(items.id)
+        setSelectedOption(items.id);
+    }
+
+    function handleCloseModal(){
+        setModalIsOpen(false);
     }
 
     return(
@@ -85,7 +95,27 @@ export default function DevelopmentAreas(){
                         animationType="slide"
                         visible={modalIsOpen}>
                             
+                            <ButtonCloseModal onPress={() => handleCloseModal()}>
 
+                                <AntDesign name="closecircle" size={25} color="#281336" />
+
+                            </ButtonCloseModal>
+
+                            <WrapperImageModal>
+
+                                <ImageModal source={item.img} alt={item.title} />
+
+                            </WrapperImageModal>
+
+                            <WrapperBottomModal>
+
+                                <WrapperTitleModal>
+
+                                    <TitleModal>{item.title}</TitleModal>
+
+                                </WrapperTitleModal>
+
+                            </WrapperBottomModal>
 
                         </Modal>
                     
