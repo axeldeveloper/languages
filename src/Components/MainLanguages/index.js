@@ -10,7 +10,7 @@ import Java from '../../Images/Languages/Java.png';
 import C from '../../Images/Languages/C.png';
 import Ruby from '../../Images/Languages/Ruby.png';
 import Swift from '../../Images/Languages/Swift.png';
-import CPlus from '../../Images/Languages/CPlus.png';
+
 
 const items = [
     {
