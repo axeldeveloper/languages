@@ -6,6 +6,7 @@ import {Wrapper} from './styles';
 
 import Header from '../../Components/Header';
 import MainLanguages from '../../Components/MainLanguages';
+import DevelopmentAreas from '../../Components/DevelopmentAreas';
 
 export default function Main(){
     return(
@@ -17,6 +18,8 @@ export default function Main(){
                 <Header />
                 
                 <MainLanguages />
+
+                <DevelopmentAreas />
 
             </Wrapper>
             
