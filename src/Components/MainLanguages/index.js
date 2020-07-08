@@ -62,7 +62,6 @@ const items = [
     {
         key: String(Math.random()),
         id: 3,
-
         name: "Python",
         img: Python,
         creator: "Guido van Rossum",
@@ -86,7 +85,6 @@ const items = [
     {
         key: String(Math.random()),
         id: 4,
-        
         name: "C#",
         img: CSharpe,
         creator: "Microsoft",
@@ -96,6 +94,24 @@ const items = [
             "Programação Funcional",
             "Interface",
             "Classes e Estruturas",
+        ],
+        mainFrameworks:[
+            "",
+        ],
+    },
+    {
+        key: String(Math.random()),
+        id: 5,
+        name: "Java",
+        img: Java,
+        creator: "James Gosling",
+        country: "Canadá",
+        features:[
+            "Orientação a Objetos",
+            "Portabilidade",
+            "Segurança",
+            "Alta Performance",
+            "Dinamismo",
         ],
         mainFrameworks:[
             "",
