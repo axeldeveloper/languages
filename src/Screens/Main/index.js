@@ -5,6 +5,7 @@ import {StatusBar} from 'react-native';
 import {Wrapper} from './styles';
 
 import Header from '../../Components/Header';
+import MainLanguages from '../../Components/MainLanguages';
 
 export default function Main(){
     return(
@@ -14,6 +15,8 @@ export default function Main(){
             <Wrapper>
 
                 <Header />
+                
+                <MainLanguages />
 
             </Wrapper>
             
