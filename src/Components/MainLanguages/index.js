@@ -114,10 +114,72 @@ const items = [
             "Dinamismo",
         ],
         mainFrameworks:[
+            "Blade",
+            "Dropwizard",
+            "Spring",
+            "Grails",
+            "Hibernate",
+        ],
+    },
+
+    {
+        key: String(Math.random()),
+        id: 6,
+        name: "C",
+        img: C,
+        creator: "Dennis Ritchie",
+        country: "EUA",
+        features:[
+            "Portabilidade",
+            "Modularidade",
+            "Recursos de Baixo Nível",
+            "Simplicidade",
+            "Dinamismo",
+        ],
+        mainFrameworks:[
             "",
         ],
     },
 
+    {
+        key: String(Math.random()),
+        id: 7,
+        name: "Ruby",
+        img: Ruby,
+        creator: "Yukihiro Matsumoto",
+        country: "Japão",
+        features:[
+            "Orientada a Objetos",
+            "Programação Funcional",
+            "Mixins",
+            "CodeBlocks",
+        ],
+        mainFrameworks:[
+            "Ruby on Rails",
+            "Padrino ",
+            "NYNY",
+            "Grape",
+            "Nancy",
+        ],
+    },
+
+    {
+        key: String(Math.random()),
+        id: 8,
+        name: "Swift",
+        img: Swift,
+        creator: "Chris Lattner",
+        country: "EUA",
+        features:[
+            "Controle de acesso",
+            "Tipagem opcional",
+            "Tipagem de valor",
+            "CodeBlocks",
+        ],
+        mainFrameworks:[
+            "",
+        ],
+    },
 
 ]
 
