@@ -1,9 +1,20 @@
 import React from 'react';
 
-import {Text} from 'react-native';
+import {Wrapper,
+        Container,
+
+} from './styles';
 
 export default function Home(){
     return(
-        <Text>Aqui vai a tela home</Text>
+        <Wrapper>
+
+            <Container>
+
+            
+
+            </Container>
+
+        </Wrapper>
     )
 } 
