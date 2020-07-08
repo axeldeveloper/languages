@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
-    padding:15px;
+    padding:10px;
 `;
 
 export const WrapperIcons = styled.View`

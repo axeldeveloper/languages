@@ -1,7 +1,5 @@
 import React from 'react';
 
-import {Title, Img} from './styles';
-
 import Javascript from '../../Images/Languages/Javascript.png';
 import PHP from '../../Images/Languages/PHP.png';
 import Python from '../../Images/Languages/Python.png';
@@ -11,6 +9,12 @@ import C from '../../Images/Languages/C.png';
 import Ruby from '../../Images/Languages/Ruby.png';
 import Swift from '../../Images/Languages/Swift.png';
 
+import {Wrapper,
+        Container,
+        Option,
+        Img,
+        Title,
+} from './styles';
 
 const items = [
     {
@@ -185,6 +189,22 @@ const items = [
 
 export default function MainLanguages(){
     return(
-        <Title>Teste</Title>
+        <Wrapper>
+
+            <Container>
+
+                {items.map(item => (
+                    <Option key={item.key}>
+                        
+                        <Img source={item.img} alt={item.name} />
+
+                        <Title>{item.name}</Title>
+
+                    </Option>
+                ))}
+
+            </Container>
+
+        </Wrapper>
     )
 }
