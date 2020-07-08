@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import {Modal} from 'react-native';
 
@@ -55,15 +55,29 @@ const items = [
 ]
 
 export default function DevelopmentAreas(){
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+
+    function handleShowMoreInfo(items){
+        console.log(items);
+    }
+
     return(
         <Container>
 
             {items.map(item => (
-                <Option key={item.key}>
+                <Option key={item.key} onPress={() => handleShowMoreInfo(item)}>
 
                     <TitleOption>{item.title}</TitleOption>
 
                     <ImageOption source={item.img} alt={item.title} />
+
+                    <Modal
+                    animationType="slide"
+                    visible={modalIsOpen}>
+
+
+
+                    </Modal>
 
                 </Option>
             ))}
