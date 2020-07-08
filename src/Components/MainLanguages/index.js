@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 
 import {Modal} from 'react-native';
 
-import { AntDesign } from '@expo/vector-icons';
+import { AntDesign, Entypo } from '@expo/vector-icons';
 
 import Javascript from '../../Images/Languages/Javascript.png';
 import PHP from '../../Images/Languages/PHP.png';
@@ -22,6 +22,14 @@ import {Wrapper,
         WrapperImage,
         ImageModal,
         WrapperModal,
+        WrapperTitleModal,
+        TitleModal,
+        WrapperTopic,
+        TitleTopic,
+        Resp,
+        WrapperGoBackButton,
+        GoBackButton,
+        TileGoBackButton,
 } from './styles';
 
 const items = [
@@ -33,11 +41,11 @@ const items = [
         creator: "Brendan Eich",
         country: "EUA",
         features:[
-            "Suporte Universal",
-            "Imperativa e Estruturada",
-            "Dinâmica",
-            "Baseada em Objetos",
-            "Funcional",
+            "Suporte Universal ",
+            "Imperativa e Estruturada ",
+            "Dinâmica ",
+            "Baseada em Objetos ",
+            "Funcional ",
         ],
         mainFrameworks:[
             "React",
@@ -195,8 +203,6 @@ const items = [
 
 ]
 
-
-
 export default function MainLanguages(){    
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null)
@@ -234,11 +240,59 @@ export default function MainLanguages(){
 
                                 </ButtonCloseModal>
 
-                                
+                                <WrapperImage>
+
+                                    <ImageModal source={item.img} alt={item.name} />
+
+                                </WrapperImage>
 
                                 <WrapperModal>
 
-                                    
+                                    <WrapperTitleModal>
+
+                                        <TitleModal>{item.name}</TitleModal>
+
+                                    </WrapperTitleModal>
+
+                                    <WrapperTopic>
+
+                                        <TitleTopic>Criador: {item.creator}</TitleTopic>
+
+                                    </WrapperTopic>
+
+                                    <WrapperTopic>
+
+                                        <TitleTopic>País: {item.country}</TitleTopic>
+
+                                    </WrapperTopic>
+
+                                    <WrapperTopic>
+
+                                        <TitleTopic>Características: {item.features.map(itemFeatures => (
+                                            <TitleTopic>{itemFeatures}, </TitleTopic>
+                                        ))} </TitleTopic>
+
+                                    </WrapperTopic>
+
+                                    <WrapperTopic>
+
+                                        <TitleTopic>Frameworks: {item.mainFrameworks.map(itemMainFrameworks => (
+                                            <TitleTopic>{itemMainFrameworks}, </TitleTopic>
+                                        ))} </TitleTopic>
+
+                                    </WrapperTopic>
+
+                                    <WrapperGoBackButton>
+
+                                        <GoBackButton onPress={() => handleCloseModal()}>
+
+                                            <Entypo name="back" size={24} color="black" />
+
+                                            <TileGoBackButton>Voltar</TileGoBackButton>
+
+                                        </GoBackButton>
+
+                                    </WrapperGoBackButton>
 
                                 </WrapperModal>
 
