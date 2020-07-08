@@ -12,7 +12,7 @@ import {Wrapper,
         TitleButton,
 } from './styles';
 
-export default function Home(){
+export default function Home({navigation}){
     return(
         <Wrapper>
 
@@ -22,7 +22,7 @@ export default function Home(){
 
                 <Img source={Developer} alt="Desenvolvedor" />
 
-                <ButtonInit>
+                <ButtonInit onPress={() => navigation.navigate('Main')}>
 
                     <TitleButton>Iniciar</TitleButton>
 
