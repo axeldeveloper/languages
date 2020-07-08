@@ -1,9 +1,12 @@
 import React from 'react';
 
-import {Text} from 'react-native';
+import {StatusBar, Text} from 'react-native';
 
 export default function Main(){
     return(
-        <Text>Aqui vai a tela Main</Text>
+        <>
+            <StatusBar backgroundColor="#fff" barStyle="dark-content" />
+            <Text>Aqui vai a tela Main</Text>
+        </>
     )
 }
