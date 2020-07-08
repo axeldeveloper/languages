@@ -19,7 +19,7 @@ const items = [
         name: "Javascript",
         img: Javascript,
         creator: "Brendan Eich",
-        country: "Eua",
+        country: "EUA",
         features:[
             "Suporte Universal",
             "Imperativa e Estruturada",
@@ -62,6 +62,7 @@ const items = [
     {
         key: String(Math.random()),
         id: 3,
+
         name: "Python",
         img: Python,
         creator: "Guido van Rossum",
@@ -79,6 +80,25 @@ const items = [
             "Web2py",
             "CherryPy",
             "Bottle"
+        ],
+    },
+
+    {
+        key: String(Math.random()),
+        id: 4,
+        
+        name: "C#",
+        img: CSharpe,
+        creator: "Microsoft",
+        country: "EUA",
+        features:[
+            "Orientação a Objetos",
+            "Programação Funcional",
+            "Interface",
+            "Classes e Estruturas",
+        ],
+        mainFrameworks:[
+            "",
         ],
     },
 
