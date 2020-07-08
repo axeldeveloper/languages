@@ -2,13 +2,19 @@ import React, {useState} from 'react';
 
 import {Modal} from 'react-native';
 
-import {Container, Option, TitleOption, ImageOption} from './styles';
 
 import frontEnd from '../../Images/DevelopmentAreas/frontEnd.png';
 import backEnd from '../../Images/DevelopmentAreas/backEnd.png';
 import mobile from '../../Images/DevelopmentAreas/mobile.png';
 import desktop from '../../Images/DevelopmentAreas/desktop.png';
 import games from '../../Images/DevelopmentAreas/games.png';
+
+import {Container,
+        Option,
+        TitleOption,
+        ImageOption,
+        
+} from './styles';
 
 const items = [
     {
@@ -56,9 +62,11 @@ const items = [
 
 export default function DevelopmentAreas(){
     const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedOption, setSelectedOption] = useState(null);
 
     function handleShowMoreInfo(items){
-        console.log(items);
+        setModalIsOpen(true);
+        setSelectedOption(items.id)
     }
 
     return(
@@ -71,13 +79,17 @@ export default function DevelopmentAreas(){
 
                     <ImageOption source={item.img} alt={item.title} />
 
-                    <Modal
-                    animationType="slide"
-                    visible={modalIsOpen}>
+                    {item.id === selectedOption ? 
+                    
+                        <Modal
+                        animationType="slide"
+                        visible={modalIsOpen}>
+                            
 
 
-
-                    </Modal>
+                        </Modal>
+                    
+                    : null}
 
                 </Option>
             ))}
