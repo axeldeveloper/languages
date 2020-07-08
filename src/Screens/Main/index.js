@@ -4,6 +4,8 @@ import {StatusBar} from 'react-native';
 
 import {Wrapper} from './styles';
 
+import Header from '../../Components/Header';
+
 export default function Main(){
     return(
         <>
@@ -11,7 +13,7 @@ export default function Main(){
 
             <Wrapper>
 
-                
+                <Header />
 
             </Wrapper>
             

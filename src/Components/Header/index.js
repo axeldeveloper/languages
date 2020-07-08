@@ -4,6 +4,6 @@ import {Title} from './styles';
 
 export default function Header(){
     return(
-        <Text>Aqui vai a header</Text>
+        <Title>Aqui vai a header</Title>
     )
 }
