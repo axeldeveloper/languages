@@ -2,6 +2,8 @@ import React,{useState} from 'react';
 
 import {Modal} from 'react-native';
 
+import { AntDesign } from '@expo/vector-icons';
+
 import Javascript from '../../Images/Languages/Javascript.png';
 import PHP from '../../Images/Languages/PHP.png';
 import Python from '../../Images/Languages/Python.png';
@@ -16,6 +18,10 @@ import {Wrapper,
         Option,
         Img,
         Title,
+        ButtonCloseModal,
+        WrapperImage,
+        ImageModal,
+        WrapperModal,
 } from './styles';
 
 const items = [
@@ -194,9 +200,14 @@ const items = [
 export default function MainLanguages(){    
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedOption, setSelectedOption] = useState(null)
+    
     function handleShowMoreInfo(item){
         setIsModalOpen(true);
         setSelectedOption(item.id);
+    }
+
+    function handleCloseModal(){
+        setIsModalOpen(false);
     }
 
     return(
@@ -216,8 +227,20 @@ export default function MainLanguages(){
                             <Modal
                             animationType="slide"
                             visible={isModalOpen}>
+                                
+                                <ButtonCloseModal onPress={() => handleCloseModal()}>
+
+                                    <AntDesign name="closecircle" size={25} color="#281336" />
+
+                                </ButtonCloseModal>
 
                                 
+
+                                <WrapperModal>
+
+                                    
+
+                                </WrapperModal>
 
                             </Modal>
                         

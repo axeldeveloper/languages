@@ -31,3 +31,23 @@ export const Img = styled.Image`
 export const Title = styled.Text`
     color:#fff;
 `;
+
+export const ButtonCloseModal = styled.TouchableOpacity`
+    width:40px;
+    padding:5px
+    align-items:center;
+    justify-content:center;
+`;
+
+export const WrapperImage = styled.View``;
+
+export const ImageModal = styled.Image``;
+
+export const WrapperModal = styled.View`
+    flex:1
+    background-color:#281336;
+    margin-top:150px;
+    border-top-left-radius:25px;
+    border-top-right-radius:25px;
+` 
+
