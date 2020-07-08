@@ -14,6 +14,8 @@ const items = [
         id: 1,
         title: 'Web Front - End',
         img: frontEnd,
+        description1: 'O desenvolvdor Front-End é responsável pela camada de apresentação de produtos digitais (normalmente sites).',
+        description2: 'Resumidamente, o front é aquilo que o usuário vê e interage',
     },
     {
         key: String(Math.random()),
