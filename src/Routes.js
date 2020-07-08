@@ -5,7 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 
 import Home from './Screens/Home';
 import Main from './Screens/Main';
- 
+
 const Stack = createStackNavigator();
 
 export default function Routes(){
