@@ -38,6 +38,30 @@ const items = [
     {
         key: String(Math.random()),
         id: 2,
+        name: "PHP",
+        img: PHP,
+        creator: "Rasmus Lerdorf",
+        country: "Groelândia",
+        features:[
+            "Velocidade e Robustez",
+            "Orientação a Objetos",
+            "Portabilidade",
+            "Tipagem Dinâmica",
+            "Open-Source",
+            "Server-Side",
+        ],
+        mainFrameworks:[
+            "Laravel",
+            "Zend",
+            "Phalcon",
+            "CakePHP",
+            "CodeIgniter"
+        ],
+    },
+
+    {
+        key: String(Math.random()),
+        id: 3,
         name: "Python",
         img: Python,
         creator: "Guido van Rossum",
